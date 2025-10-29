@@ -1,0 +1,87 @@
+.violation-tracker-container {
+  background-color: #1a1a2e;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #4a4e69;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.violation-tracker-container h2 {
+  text-align: center;
+  color: #fca311;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.violation-form {
+  background-color: #0f172a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.violation-form h3 {
+  color: #c5c6c7;
+  margin-top: 0;
+  border-bottom: 1px solid #4a4e69;
+  padding-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #4a4e69;
+  background-color: #1a1a2e;
+  color: #e0e1dd;
+}
+
+.violation-form button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #14213d;
+  background-color: #fca311;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.violations-list h3 {
+  color: #c5c6c7;
+  border-bottom: 1px solid #4a4e69;
+  padding-bottom: 1rem;
+}
+
+.violation-item {
+  background-color: #0f172a;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #dc3545;
+}
+
+.violation-item p {
+  margin: 0.5rem 0;
+}

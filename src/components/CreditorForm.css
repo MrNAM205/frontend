@@ -1,0 +1,73 @@
+.creditor-form-container {
+  background-color: #1a1a2e;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #4a4e69;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.creditor-form-container h3 {
+  text-align: center;
+  color: #fca311;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.creditor-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.creditor-form label {
+  display: block;
+  color: #c5c6c7;
+  margin-bottom: 0.5rem;
+}
+
+.creditor-form input,
+.creditor-form textarea,
+.creditor-form select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #4a4e69;
+  background-color: #0f172a;
+  color: #e0e1dd;
+  font-size: 1rem;
+}
+
+.creditor-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #14213d;
+  background-color: #fca311;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e69500;
+}
+
+.error-message {
+  color: #e53e3e;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.success-message {
+  color: #38a169;
+  text-align: center;
+  margin-top: 1rem;
+}

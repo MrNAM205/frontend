@@ -1,0 +1,88 @@
+/* RemedyTimeline.css */
+.remedy-timeline-container {
+  background-color: var(--parchment-beige, #f5f5dc);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color, #d4af37);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.remedy-timeline-container h3 {
+  color: var(--deep-navy, #000080);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timeline-controls select {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color, #d4af37);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.export-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--deep-navy, #000080);
+  background-color: transparent;
+  border: 1px solid var(--deep-navy, #000080);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem; /* Space for icons and line */
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-color, #d4af37);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -12px; /* (Icon width / 2) - (line width / 2) */
+  top: 0;
+  font-size: 1.8rem;
+  background-color: var(--parchment-beige, #f5f5dc);
+  padding: 0 5px;
+}
+
+.timeline-details {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.timeline-details .action {
+  font-weight: bold;
+  color: var(--dark-text, #3b3b3b);
+}
+
+.timeline-details .timestamp {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+}

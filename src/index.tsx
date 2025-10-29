@@ -5,12 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 );
+import { RemedyLogProvider } from './context/RemedyLogContext';
+import { StatuteProvider } from './context/StatuteContext';
+import { BrowserRouter } from 'react-router-dom';
+
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+      <StatuteProvider>
+        <RemedyLogProvider>
+          <App />
+        </RemedyLogProvider>
+      </StatuteProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,163 @@
+/* Sovereign Notice Generator Styling */
+
+:root {
+  --parchment-beige: #f5f5dc; /* A standard parchment color */
+  --deep-navy: #000080; /* A deep, classic navy blue */
+  --gold-accent: #ffd700; /* A rich gold for highlights */
+  --dark-text: #3b3b3b; /* For readability on the parchment background */
+  --light-text: #f0f0f0; /* For use on dark backgrounds */
+  --border-color: #d4af37; /* A softer gold for borders */
+  --error-red: #c0392b;
+}
+
+.notice-generator-container {
+  background-color: var(--parchment-beige);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  color: var(--dark-text);
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notice-generator-container h2 {
+  text-align: center;
+  color: var(--deep-navy);
+  font-family: 'Georgia', serif;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.info-icon {
+  font-size: 1rem;
+  color: var(--deep-navy);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.generator-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--deep-navy);
+}
+
+.control-group select {
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: #fff;
+  color: var(--dark-text);
+  font-size: 1rem;
+}
+
+.generator-controls button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--deep-navy);
+  background-color: var(--gold-accent);
+  border: 1px solid var(--deep-navy);
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.generator-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border-color: #999;
+  color: #666;
+}
+
+.generator-controls button:hover:not(:disabled) {
+  background-color: var(--deep-navy);
+  color: var(--gold-accent);
+}
+
+.error-message {
+  color: var(--error-red);
+  text-align: center;
+  font-weight: bold;
+}
+
+.notice-preview {
+  margin-top: 2rem;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.notice-preview h3 {
+  color: var(--deep-navy);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.notice-preview pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--parchment-beige);
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px dashed var(--deep-navy);
+  color: #000;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.export-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.export-actions button {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--light-text);
+  background-color: var(--deep-navy);
+  border: 1px solid var(--gold-accent);
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.export-actions button:hover {
+  background-color: #00005a; /* Slightly lighter navy */
+  transform: translateY(-2px);
+}

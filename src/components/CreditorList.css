@@ -1,0 +1,54 @@
+.creditor-list-container {
+  background-color: #1a1a2e;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #4a4e69;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.creditor-list-container h3 {
+  text-align: center;
+  color: #fca311;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.creditor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.creditor-item {
+  background-color: #0f172a;
+  border: 1px solid #4a4e69;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creditor-info strong {
+  font-size: 1.2rem;
+  color: #e0e1dd;
+}
+
+.creditor-info p {
+  margin: 0.5rem 0 0;
+  color: #c5c6c7;
+}
+
+.creditor-tags .tag {
+  background-color: #fca311;
+  color: #14213d;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,133 @@
+/* SovereignLoop.css */
+.sovereign-loop-container {
+  background-color: #1a1a2e;
+  border: 1px solid #4a4e69;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  color: #e0e1dd;
+}
+
+.sovereign-loop-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fca311;
+  margin-bottom: 0.5rem;
+}
+
+.sovereign-loop-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #c5c6c7;
+  margin-bottom: 2.5rem;
+}
+
+.sovereign-loop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  flex: 1;
+  position: relative;
+}
+
+.stage-symbol {
+  font-size: 2.5rem;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background-color: #162447;
+  border: 2px solid #4a4e69;
+  transition: all 0.3s ease;
+}
+
+.stage-name {
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: #c5c6c7;
+  transition: color 0.3s ease;
+}
+
+/* Styling for completed stages */
+.stage.completed {
+  opacity: 1;
+}
+
+.stage.completed .stage-symbol {
+  border-color: #00f5d4; /* Bright green for completion */
+}
+
+.stage.completed .stage-name {
+  color: #00f5d4;
+}
+
+/* Styling for the active stage */
+.stage.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.stage.active .stage-symbol {
+  border-color: #fca311; /* Gold for active */
+  box-shadow: 0 0 20px rgba(252, 163, 17, 0.6);
+}
+
+.stage.active .stage-name {
+  color: #fca311;
+  font-weight: bold;
+}
+
+/* Connector lines between stages */
+.connector {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #4a4e69;
+  margin: 0 -2px;
+  transform: translateY(-20px); /* Align with middle of the symbol */
+}
+
+/* Navigation Controls */
+.navigation-controls {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.navigation-controls button {
+  background-color: #fca311;
+  color: #14213d;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.navigation-controls button:hover:not(:disabled) {
+  background-color: #e69500;
+  transform: translateY(-2px);
+}
+
+.navigation-controls button:disabled {
+  background-color: #4a4e69;
+  color: #6b7280;
+  cursor: not-allowed;
+}

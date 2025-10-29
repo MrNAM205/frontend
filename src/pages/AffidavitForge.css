@@ -1,0 +1,91 @@
+.affidavit-forge-container {
+  background-color: #1a1a2e;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #4a4e69;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.forge-title {
+  text-align: center;
+  color: #fca311;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.forge-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.forge-controls label {
+  font-weight: bold;
+}
+
+.forge-controls select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #4a4e69;
+  background-color: #0f172a;
+  color: #e0e1dd;
+}
+
+.forge-controls button {
+  background-color: #fca311;
+  color: #14213d;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forge-controls button:disabled {
+  background-color: #4a4e69;
+  cursor: not-allowed;
+}
+
+.affidavit-preview {
+  margin-top: 2rem;
+  background-color: #0f172a;
+  border: 1px solid #4a4e69;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.affidavit-preview h3 {
+  color: #fca311;
+  margin-top: 0;
+  border-bottom: 1px solid #4a4e69;
+  padding-bottom: 1rem;
+}
+
+.affidavit-preview pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  font-family: monospace;
+  background-color: #141e30;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #e0e1dd;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.export-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.export-actions button {
+  background-color: #6c757d;
+  color: white;
+}
