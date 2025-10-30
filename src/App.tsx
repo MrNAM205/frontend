@@ -8,6 +8,7 @@ import FDCPAViolationTracker from './pages/FDCPAViolationTracker';
 import SovereignProfileEditor from './pages/SovereignProfileEditor';
 import NoticeGenerator from './pages/NoticeGenerator';
 import DispatchTracker from './pages/DispatchTracker';
+import IntelligenceConsole from './pages/IntelligenceConsole';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Link to="/violations">FDCPA Tracker</Link>
           <Link to="/profile">Sovereign Profile</Link>
           <Link to="/notices">Notice Generator</Link>
+          <Link to="/intelligence">Intelligence</Link>
           <Link to="/dispatch">Dispatch Tracker</Link>
         </nav>
       </header>
@@ -32,6 +34,7 @@ function App() {
           <Route path="/violations" element={<FDCPAViolationTracker />} />
           <Route path="/profile" element={<SovereignProfileEditor />} />
           <Route path="/notices" element={<NoticeGenerator />} />
+          <Route path="/intelligence" element={<IntelligenceConsole />} />
           <Route path="/dispatch" element={<DispatchTracker />} />
         </Routes>
       </main>

@@ -1,0 +1,123 @@
+.intelligence-console {
+  background: linear-gradient(180deg, #f7f1e0 0%, #f3ecd9 100%); /* parchment */
+  border: 2px solid #0b2545; /* navy */
+  border-radius: 10px;
+  padding: 18px;
+  margin: 18px;
+  box-shadow: 0 6px 18px rgba(11, 37, 69, 0.12);
+}
+
+.intelligence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.intelligence-header h2 {
+  margin: 0;
+  color: #072042;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.15);
+}
+
+.intelligence-controls select {
+  margin-left: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #c9b58f;
+  background: #fffdf6;
+}
+
+.intelligence-body {
+  max-height: 62vh;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+.suggestions-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.suggestion-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #fffdf7 0%, #fff8ea 100%);
+  border: 1px solid rgba(168, 136, 56, 0.35); /* gold-ish */
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(11, 37, 69, 0.08);
+}
+
+.suggestion-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.suggestion-content {
+  flex: 1 1 auto;
+}
+
+.suggestion-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.suggestion-category {
+  color: #0b2545;
+  background: rgba(11, 37, 69, 0.06);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.suggestion-message {
+  margin: 6px 0 8px 0;
+  color: #1a2d46;
+}
+
+.suggestion-actions .act-now {
+  background: linear-gradient(180deg, #ffd880 0%, #ffda6a 100%);
+  border: 1px solid #cfa43a;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.muted {
+  color: #6b6b6b;
+  padding: 8px 0;
+}
+
+.error {
+  color: #7a1515;
+  background: #fff0f0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Type-specific gentle accents */
+.suggestion-overdue {
+  border-left: 4px solid #c76b00;
+}
+.suggestion-unresponded {
+  border-left: 4px solid #d95d5d;
+}
+.suggestion-insight {
+  border-left: 4px solid #3a6fb0;
+}
+.suggestion-other {
+  border-left: 4px solid #7a7a7a;
+}
